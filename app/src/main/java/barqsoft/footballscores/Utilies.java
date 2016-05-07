@@ -1,5 +1,7 @@
 package barqsoft.footballscores;
 
+import android.util.Log;
+
 /**
  * Created by yehya khaled on 3/3/2015.
  */
@@ -67,6 +69,7 @@ public class Utilies
 
     public static int getTeamCrestByTeamName (String teamname)
     {
+        Log.i("Nama Klub : ", teamname);
         if (teamname==null){return R.drawable.no_icon;}
         switch (teamname)
         { //This is the set of icons that are currently in the app. Feel free to find and add more
@@ -74,13 +77,50 @@ public class Utilies
             case "Arsenal London FC" : return R.drawable.arsenal;
             case "Manchester United FC" : return R.drawable.manchester_united;
             case "Swansea City" : return R.drawable.swansea_city_afc;
-            case "Leicester City" : return R.drawable.leicester_city_fc_hd_logo;
+            case "Leicester City FC" : return R.drawable.leicester_city_fc_hd_logo;
             case "Everton FC" : return R.drawable.everton_fc_logo1;
             case "West Ham United FC" : return R.drawable.west_ham;
             case "Tottenham Hotspur FC" : return R.drawable.tottenham_hotspur;
             case "West Bromwich Albion" : return R.drawable.west_bromwich_albion_hd_logo;
             case "Sunderland AFC" : return R.drawable.sunderland;
             case "Stoke City FC" : return R.drawable.stoke_city;
+            case "Norwich City FC" : return R.drawable.norwich_city;
+            case "Hamburger SV" : return R.drawable.hamburger_sv;
+            case "VfL Wolfsburg" : return R.drawable.vfl_wolfsburg;
+            case "Eintracht Frankfurt" : return R.drawable.eintracht_frankfurt;
+            case "Borussia Dortmund" : return R.drawable.borussia_dortmund;
+            case "Bor. Mönchengladbach" : return R.drawable.bor_monchengladbach;
+            case "Bayer Leverkusen" : return R.drawable.bayer_leverkusen;
+            case "FC Ingolstadt 04" : return R.drawable.fc_ingolstadt;
+            case "FC Bayern München" : return R.drawable.fc_bayern_munchen;
+            case "Hannover 96" : return R.drawable.hannover;
+            case "TSG 1899 Hoffenheim" : return R.drawable.tsg_hoffenheim;
+            case "Hertha BSC" : return R.drawable.hertha_bsc;
+            case "SV Darmstadt 98" : return R.drawable.sv_darmstadt;
+            case "1. FC Köln" : return R.drawable.fc_koln;
+            case "Werder Bremen" : return R.drawable.werder_bremen;
+            case "FC Schalke 04" : return R.drawable.fc_schalke;
+            case "FC Augsburg" : return R.drawable.fc_augsburg;
+            case "VfB Stuttgart" : return R.drawable.vfb_stuttgart;
+            case "1. FSV Mainz 05" : return R.drawable.fsv_mainz;
+            case "Liverpool FC" : return R.drawable.liverpool_fc;
+            case "Swansea City FC" : return R.drawable.swansea_city;
+            case "Aston Villa FC" : return R.drawable.aston_villa;
+            case "Newcastle United FC" : return R.drawable.newcastle_united;
+            case "AFC Bournemouth" : return R.drawable.afc_bournemouth;
+            case "West Bromwich Albion FC" : return R.drawable.wet_bromwich;
+            case "Crystal Palace FC" : return R.drawable.crystal_palace;
+            case "Sunderlan AFC" : return R.drawable.sunderland;
+            case "FC Internazionale Milano" : return R.drawable.intermilan;
+            case "Empoli FC" : return R.drawable.empoli_fc;
+            case "Leicester Cisty FC" : return R.drawable.leicester_city;
+            case "Bologna FC" : return R.drawable.bologna_fc;
+            case "AC Milan" : return R.drawable.ac_milan;
+            case "Watford FC" : return R.drawable.watford_fc;
+
+            case "AS Roma" : return R.drawab
+
+
             default: return R.drawable.no_icon;
         }
     }
