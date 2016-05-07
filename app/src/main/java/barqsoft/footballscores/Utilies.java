@@ -118,7 +118,65 @@ public class Utilies
             case "AC Milan" : return R.drawable.ac_milan;
             case "Watford FC" : return R.drawable.watford_fc;
 
-            case "AS Roma" : return R.drawab
+            case "AS Roma" : return  R.drawable.as_roma;
+            case "AC Chievo Verona" : return R.drawable.chievo_verona;
+            case "Southampton FC" : return R.drawable.southampton_fc;
+            case "UC Sampdoria" : return R.drawable.sampdoria;
+            case "Genoa CFC" : return R.drawable.genoa_cfc;
+            case "Atalanta BC" : return R.drawable.atlanta_bc;
+            case "Udinese Calcio" : return R.drawable.udinese_calcio;
+            case "ACF Fiorentina" : return R.drawable.fiorentina;
+            case "US Cittá di Palermo" : return R.drawable.citta_palermo;
+            case "Frosinone Calcio" : return R.drawable.frosinone_calcio;
+            case "US Sassuolo Calcio" : return R.drawable.sassuolo_calcio;
+            case "Carpi FC" : return R.drawable.carpi_fc;
+            case "SS Lazio" : return R.drawable.lazio;
+            case "VfL Bochum" : return R.drawable.bochum;
+            case "Eintracht Braunschweig" : return R.drawable.eintracht_braunschweig;
+            case "Arminia Bielefeld" : return R.drawable.arminia_bielefeld;
+            case "1. FC Union Berlin" : return R.drawable.union_berlin;
+            case "TSV 1860 München" : return R.drawable.tsv_munchen;
+            case "SC Paderborn 07" : return R.drawable.paderbon;
+            case "Fortuna Düsseldorf" : return R.drawable.fortuna_dusseldorf;
+            case "FSV Frankfurt" : return R.drawable.fsv_frankfurt;
+            case "SC Freiburg" : return R.drawable.freiburg;
+            case "1. FC Heidenheim 1846" : return R.drawable.fc_heidenhein;
+            case "1. FC Kaiserslautern" : return R.drawable.kaiserslautern;
+            case "SpVgg Greuther Fürth" : return R.drawable.greauther_furth;
+            case "1. FC Nürnberg" : return R.drawable.nurnberg;
+            case "FC St. Pauli" : return R.drawable.st_pauli;
+            case "Red Bull Leipzig" : return R.drawable.redbull_leipzig;
+            case "Karlsruher SC" : return R.drawable.karlrsruher;
+            case "SV Sandhausen" : return R.drawable.sandhausen;
+            case "MSV Duisburg" : return R.drawable.msv_duisburg;
+            case "Manchester City FC" : return R.drawable.mancester_city;
+            case "Arsenal FC" : return R.drawable.arsenal_fc;
+            case "Getafe CF" : return R.drawable.getafe_cf;
+            case "Sporting Gijón" : return R.drawable.sporting_gijon;
+            case "FC Barcelona" : return R.drawable.barcelona;
+            case "RCD Espanyol" : return R.drawable.espanyol;
+            case "SD Eibar" : return R.drawable.eibar;
+            case "Real Betis" : return R.drawable.real_betis;
+            case "UD Las Palmas" : return R.drawable.las_palmas;
+            case "Athletic Club" : return R.drawable.athletic_club;
+            case "Levante UD" : return R.drawable.levante_ud;
+            case "Club Atlético de Madrid" : return R.drawable.atletico_madrid;
+            case "Real Madrid CF" : return R.drawable.real_madrid;
+            case "Valencia CF" : return R.drawable.valencia;
+            case "Real Sociedad de Fútbol" : return R.drawable.real_sociedad;
+            case "Rayo Vallecano de Madrid" : return R.drawable.vallecano_madrid;
+            case "Sevilla FC" : return R.drawable.sevilla_fc;
+            case "Granada CF" : return R.drawable.granada_cf;
+            case "Villareal CF" : return R.drawable.villareal;
+            case "RC Deportivo La Coruna" : return R.drawable.deportivo_coruna;
+            case "RC Celta de Vigo" : return R.drawable.celta_vigo;
+            case "Málaga CF" : return R.drawable.malaga_cf;
+            case "Hellas Verona FC" : return R.drawable.hellas_ferona;
+            case "Juventus Turin" : return R.drawable.juventus_turin;
+            case "Torino FC" : return R.drawable.torino;
+            case "SSC Napoli" : return R.drawable.napoli;
+
+
 
 
             default: return R.drawable.no_icon;
