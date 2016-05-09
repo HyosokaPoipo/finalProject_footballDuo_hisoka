@@ -1,7 +1,5 @@
 package barqsoft.footballscores;
 
-import android.util.Log;
-
 /**
  * Created by yehya khaled on 3/3/2015.
  */
@@ -69,7 +67,7 @@ public class Utilies
 
     public static int getTeamCrestByTeamName (String teamname)
     {
-        Log.i("Nama Klub : ", teamname);
+        //Log.i("Nama Klub : ", teamname);
         if (teamname==null){return R.drawable.no_icon;}
         switch (teamname)
         { //This is the set of icons that are currently in the app. Feel free to find and add more

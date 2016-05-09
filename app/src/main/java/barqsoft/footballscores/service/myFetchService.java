@@ -49,12 +49,13 @@ public class myFetchService extends IntentService
     {
         //Creating fetch URL
         final String BASE_URL = "http://api.football-data.org/alpha/fixtures"; //Base URL
-        final String QUERY_TIME_FRAME = "timeFrame"; //Time Frame parameter to determine days
+        final String QUERY_TIME_FRAME = "22"; //Time Frame parameter to determine days
         //final String QUERY_MATCH_DAY = "matchday";
 
-        Uri fetch_build = Uri.parse(BASE_URL).buildUpon().
-                appendQueryParameter(QUERY_TIME_FRAME, timeFrame).build();
-        //Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
+       // Uri fetch_build = Uri.parse(BASE_URL).buildUpon().
+        //        appendQueryParameter(QUERY_TIME_FRAME, timeFrame).build();
+        Uri fetch_build = Uri.parse(BASE_URL);
+        Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
         HttpURLConnection m_connection = null;
         BufferedReader reader = null;
         String JSON_data = null;
@@ -87,6 +88,7 @@ public class myFetchService extends IntentService
                 return;
             }
             JSON_data = buffer.toString();
+            Log.i("Data dari server", buffer.toString());
         }
         catch (Exception e)
         {
@@ -185,9 +187,12 @@ public class myFetchService extends IntentService
             {
 
                 JSONObject match_data = matches.getJSONObject(i);
+                //Log.i("JSONObject", match_data.toString());
                 League = match_data.getJSONObject(LINKS).getJSONObject(SOCCER_SEASON).
                         getString("href");
+                //Log.i("League awal", League);
                 League = League.replace(SEASON_LINK,"");
+                Log.i("League",League);
                 //This if statement controls which leagues we're interested in the data from.
                 //add leagues here in order to have them be added to the DB.
                 // If you are finding no data in the app, check that this contains all the leagues.
@@ -200,6 +205,7 @@ public class myFetchService extends IntentService
                 {
                     match_id = match_data.getJSONObject(LINKS).getJSONObject(SELF).
                             getString("href");
+                    Log.i("match_id",match_id);
                     match_id = match_id.replace(MATCH_LINK, "");
                     if(!isReal){
                         //This if statement changes the match ID of the dummy data so that it all goes into the database
@@ -265,7 +271,7 @@ public class myFetchService extends IntentService
             inserted_data = mContext.getContentResolver().bulkInsert(
                     DatabaseContract.BASE_CONTENT_URI,insert_data);
 
-            //Log.v(LOG_TAG,"Succesfully Inserted : " + String.valueOf(inserted_data));
+            Log.v(LOG_TAG,"Succesfully Inserted : " + String.valueOf(inserted_data));
         }
         catch (JSONException e)
         {
